@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="718.75" y="16.5">QuackBehavior</node>
+    <node x="198.5" y="16.5">FlyBehavior</node>
+    <node x="0.0" y="194.0">FlyWithWings</node>
+    <node x="798.75" y="194.0">Quack</node>
+    <node x="638.75" y="194.0">Squeak</node>
+    <node x="145.0" y="194.0">FlyNoWay</node>
+    <node x="315.5" y="136.0">Duck</node>
+    <node x="379.5" y="355.0">MallardDuck</node>
+    <node x="958.75" y="194.0">MuteQuack</node>
+  </nodes>
+  <notes>
+    <note x="122.5" y="28.5">
+      <node>FlyNoWay</node>
+      <value>不会飞</value>
+      <edge>
+        <point x="-29.5" y="-26.5" />
+        <point x="174.5" y="106.0" />
+        <point x="150.5" y="106.0" />
+        <point x="0.0" y="14.5" />
+      </edge>
+    </note>
+    <note x="9.25" y="28.5">
+      <node>FlyWithWings</node>
+      <value>飞行</value>
+      <edge>
+        <point x="-31.25" y="-26.5" />
+        <point x="0.0" y="14.5" />
+      </edge>
+    </note>
+    <note x="630.5" y="28.5">
+      <node>Squeak</node>
+      <value>吱吱叫</value>
+      <edge>
+        <point x="-35.0" y="-26.5" />
+        <point x="673.75" y="106.0" />
+        <point x="658.5" y="106.0" />
+        <point x="0.0" y="14.5" />
+      </edge>
+    </note>
+    <note x="891.0" y="28.5">
+      <node>Quack</node>
+      <value>呱呱叫</value>
+      <edge>
+        <point x="35.0" y="-26.5" />
+        <point x="903.75" y="116.0" />
+        <point x="919.0" y="116.0" />
+        <point x="0.0" y="14.5" />
+      </edge>
+    </note>
+    <note x="336.5" y="0.0">
+      <node>Duck</node>
+      <value>public void performQuack(){\n//在此实现叫的方法，并且不需要关心怎么叫\nquackBehavior.quack();\n}</value>
+      <edge>
+        <point x="0.0" y="-84.5" />
+        <point x="0.0" y="43.0" />
+      </edge>
+    </note>
+    <note x="1035.75" y="28.5">
+      <node>MuteQuack</node>
+      <value>不会叫</value>
+      <edge>
+        <point x="35.0" y="-26.5" />
+        <point x="0.0" y="14.5" />
+      </edge>
+    </note>
+  </notes>
+  <edges>
+    <edge source="MuteQuack" target="QuackBehavior">
+      <point x="-35.0" y="-26.5" />
+      <point x="993.75" y="106.0" />
+      <point x="841.25" y="106.0" />
+      <point x="52.5" y="26.5" />
+    </edge>
+    <edge source="MallardDuck" target="Duck">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="84.5" />
+    </edge>
+    <edge source="Duck" target="QuackBehavior">
+      <point x="100.66666666666663" y="-84.5" />
+      <point x="567.1666666666666" y="116.0" />
+      <point x="736.25" y="116.0" />
+      <point x="-52.5" y="26.5" />
+    </edge>
+    <edge source="FlyNoWay" target="FlyBehavior">
+      <point x="29.5" y="-26.5" />
+      <point x="233.5" y="116.0" />
+      <point x="257.5" y="116.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="Duck" target="FlyBehavior">
+      <point x="-100.66666666666669" y="-84.5" />
+      <point x="365.8333333333333" y="116.0" />
+      <point x="296.83333333333337" y="116.0" />
+      <point x="39.33333333333337" y="26.5" />
+    </edge>
+    <edge source="FlyWithWings" target="FlyBehavior">
+      <point x="31.25" y="-26.5" />
+      <point x="93.75" y="116.0" />
+      <point x="218.16666666666663" y="116.0" />
+      <point x="-39.33333333333334" y="26.5" />
+    </edge>
+    <edge source="Quack" target="QuackBehavior">
+      <point x="-35.0" y="-26.5" />
+      <point x="833.75" y="116.0" />
+      <point x="806.25" y="116.0" />
+      <point x="17.5" y="26.5" />
+    </edge>
+    <edge source="Squeak" target="QuackBehavior">
+      <point x="35.0" y="-26.5" />
+      <point x="743.75" y="116.0" />
+      <point x="771.25" y="116.0" />
+      <point x="-17.5" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="549.5" y="216.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
