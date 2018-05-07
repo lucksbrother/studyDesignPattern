@@ -7,36 +7,33 @@ import java.util.Observable;
  * Created by wangbinops on 2018/5/3.
  * 王斌
  */
-public class BankMessage extends Observable {
+class BankMessage extends Observable {
 
     private Float consumptionAmount;
     private String consumptionAddress;
     private Date consumptionDate;
 
-    public BankMessage() {
-    }
-
-    public void ConsumptionNotify() {
+    private void consumptionNotify() {
         setChanged();
         notifyObservers(this);
     }
 
-    public void setConsumptionAction(Float consumptionAmount,String consumptionAddress,Date consumptionDate){
+    void setConsumptionAction(Float consumptionAmount, String consumptionAddress, Date consumptionDate){
         this.consumptionAddress = consumptionAddress;
         this.consumptionAmount = consumptionAmount;
         this.consumptionDate = consumptionDate;
-        ConsumptionNotify();
+        consumptionNotify();
     }
 
-    public Float getConsumptionAmount() {
+    Float getConsumptionAmount() {
         return consumptionAmount;
     }
 
-    public String getConsumptionAddress() {
+    String getConsumptionAddress() {
         return consumptionAddress;
     }
 
-    public Date getConsumptionDate() {
+    Date getConsumptionDate() {
         return consumptionDate;
     }
 

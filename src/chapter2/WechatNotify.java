@@ -5,7 +5,9 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
- * Created by wangbinops on 2018/5/8.
+ *
+ * @author wangbinops
+ * @date 2018/5/8
  * 王斌
  */
 public class WechatNotify implements Observer, ConsumptionNotify {

@@ -3,7 +3,9 @@ package chapter2;
 import java.util.Date;
 
 /**
- * Created by wangbinops on 2018/5/7.
+ *
+ * @author wangbinops
+ * @date 2018/5/7
  * 王斌
  */
 public class TestMain {
